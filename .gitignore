@@ -1,0 +1,76 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Build outputs
+dist/
+build/
+*.egg-info/
+*.egg
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Testing
+coverage/
+.nyc_output/
+.pytest_cache/
+htmlcov/
+
+# Docker
+.docker/
+
+# ML Models (large binary files)
+ml-service/models/*.joblib
+ml-service/models/*.pkl
+ml-service/models/*.h5
+!ml-service/models/.gitkeep
+
+# ML Data (large datasets)
+ml-service/data/*.xlsx
+ml-service/data/*.xls
+ml-service/data/OnlineRetail*
+ml-service/data/sales_train*
+ml-service/data/calendar.csv
+ml-service/data/sell_prices.csv
+!ml-service/data/sample_sales.csv
+!ml-service/data/README.md
+
+# OS
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# TypeScript
+*.tsbuildinfo
+
+# Misc
+*.bak
+*.tmp

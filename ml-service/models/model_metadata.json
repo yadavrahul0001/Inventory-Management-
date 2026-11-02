@@ -1,0 +1,61 @@
+{
+  "model_version": "xgb-v1-20260923-011330",
+  "training_date": "2026-09-23T01:13:30.625521",
+  "data_path": "data/sample_sales.csv",
+  "dataset_info": "1825 raw rows, 5 products",
+  "num_products": 5,
+  "product_ids": [
+    "HEAD001",
+    "KEYB001",
+    "MON001",
+    "MOUSE001",
+    "WEBCAM001"
+  ],
+  "product_id_map": {
+    "HEAD001": 0,
+    "KEYB001": 1,
+    "MON001": 2,
+    "MOUSE001": 3,
+    "WEBCAM001": 4
+  },
+  "feature_names": [
+    "price",
+    "product_encoded",
+    "day_of_week",
+    "day_of_month",
+    "month",
+    "year",
+    "quarter",
+    "is_weekend",
+    "week_of_year",
+    "lag_1",
+    "lag_7",
+    "lag_14",
+    "lag_30",
+    "rolling_7_mean",
+    "rolling_7_std",
+    "rolling_30_mean",
+    "rolling_30_std",
+    "price_rolling_mean"
+  ],
+  "train_samples": 1340,
+  "test_samples": 335,
+  "test_ratio": 0.2,
+  "hyperparameters": {
+    "n_estimators": 200,
+    "max_depth": 6,
+    "learning_rate": 0.1,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "min_child_weight": 3,
+    "reg_alpha": 0.1,
+    "reg_lambda": 1.0,
+    "random_state": 42,
+    "n_jobs": -1
+  },
+  "metrics": {
+    "mae": 3.0966664356971854,
+    "rmse": 3.8788927401028848,
+    "mape": 59.41432728972996
+  }
+}
